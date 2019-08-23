@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMovieActivity"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/detail_poster"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/detail_poster"
+        android:text="@string/movie_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_title"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/detail_poster"
+        android:ellipsize="end"
+        android:text="@string/release_date" />
+
+    <TextView
+        android:id="@+id/detail_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_releaseDate"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/detail_poster"
+        android:ellipsize="end"
+        android:text="@string/runtime" />
+
+    <TextView
+        android:id="@+id/detail_label_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_poster"
+        android:layout_marginTop="20dp"
+        android:text="@string/overview" />
+
+    <TextView
+        android:id="@+id/detail_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_label_overview"
+        android:layout_marginTop="20dp"
+        android:text="@string/overview" />
+
+
+
+    <TextView
+        android:id="@+id/detail_director_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/detail_overview"
+        android:textStyle="bold"
+        android:text="@string/directorName"/>
+
+    <TextView
+        android:id="@+id/detail_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_director_name"
+        android:text="@string/label_director"/>
+</RelativeLayout>
